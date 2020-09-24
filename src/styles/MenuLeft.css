@@ -1,0 +1,130 @@
+.SideMenu {
+  /* margin-right: 50px; */
+  margin-left: 50px;
+  min-height: 100vh;
+  width: 320px;
+}
+
+.SideMenu .logo {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 900;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.SideMenu .logo i {
+  font-size: 20px;
+  color: rgb(83, 83, 216);
+  background-color: #0000004f;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.65);
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.SideMenu .categories p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.253);
+  margin-bottom: 10px;
+}
+
+.SideMenu .categories ul {
+  padding: 0 30px 0 0;
+  list-style: none;
+}
+
+.SideMenu .categories ul li {
+  color: rgba(255, 255, 255, 0.685);
+  padding: 12px 0px 12px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-delay: 10ms;
+  transition-duration: 300ms;
+  font-size: 12px;
+  transition-delay: 100ms;
+  transition-duration: 300ms;
+}
+.SideMenu .categories ul li:hover {
+  background: #222736;
+  color: white;
+  transform: translateX(10px);
+}
+
+.SideMenu .categories ul li i {
+  margin-right: 10px;
+}
+
+.SideMenu .store {
+  color: white;
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+}
+.SideMenu .store p {
+  margin-bottom: 0;
+}
+.SideMenu .store .apple h3,
+.SideMenu .store .google h3 {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.SideMenu .store .apple:hover,
+.SideMenu .store .google:hover {
+  position: relative;
+  bottom: 2px;
+}
+.SideMenu .store .apple,
+.SideMenu .store .google {
+  display: flex;
+  background-color: #101925;
+  padding: 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.SideMenu .store i {
+  font-size: 23px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.SideMenu .store p {
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.SideMenu .lorem {
+  font-size: 12px;
+  text-align: justify;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.253);
+  width: 200px;
+}
+.hamburger {
+  z-index: 3;
+  color: white;
+  font-size: 20px;
+  display: none;
+  position: relative;
+  left: -20px;
+  top: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .SideMenu {
+    position: absolute;
+    z-index: 2;
+    background-color: #0e111a;
+    left: -500px;
+    width: 250px;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  }
+  .SideMenu.active {
+    left: 10px;
+  }
+  .hamburger {
+    display: block;
+  }
+}

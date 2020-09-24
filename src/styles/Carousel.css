@@ -1,0 +1,51 @@
+.custom-tag-img {
+  width: 100%;
+  height: 450px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.posterDetails {
+  position: absolute;
+  z-index: 1;
+  color: red;
+  top: 50px;
+  left: 120px;
+  width: 400px;
+  font-size: 14px;
+  color: rgb(160, 152, 152);
+}
+
+.posterDetails h3 {
+  color: white;
+  margin: 20px 0;
+}
+
+.posterDetails .butns button:hover {
+  color: white;
+  background: #242836e5;
+}
+.posterDetails .butns button {
+  border: none;
+  outline: none;
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #1c2031;
+  color: rgb(189, 187, 187);
+  border-radius: 5px;
+}
+
+.posterDetails p {
+  margin: 10px;
+  color: WHITE;
+}
+
+@media only screen and (max-width: 600px) {
+  .posterDetails {
+    top: 100px;
+    left: 30px;
+  }
+  .posterDetails p {
+    display: none;
+  }
+}

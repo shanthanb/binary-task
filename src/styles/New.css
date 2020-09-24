@@ -1,0 +1,21 @@
+.New {
+  position: relative;
+}
+.New .heading p {
+  color: white;
+}
+
+.New .cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+}
+
+@media only screen and (max-width: 600px) {
+  .New .cards {
+    justify-content: center;
+  }
+  .New .cards img {
+    width: 250px;
+  }
+}

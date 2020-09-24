@@ -1,0 +1,38 @@
+.Movies {
+  margin: 20px 0;
+}
+.Movies .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.Movies .heading p:nth-child(1) {
+  color: white;
+}
+.Movies .heading p:nth-child(2):hover {
+  position: relative;
+  bottom: 2px;
+  background: rgb(211, 208, 208);
+}
+.Movies .heading p:nth-child(2) {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: rgb(21, 21, 44);
+  cursor: pointer;
+}
+
+.Movies .cards {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: flex-start; */
+}
+
+@media only screen and (max-width: 600px) {
+  .Movies .cards {
+    justify-content: center;
+  }
+  .Movies .cards img {
+    width: 250px;
+  }
+}
